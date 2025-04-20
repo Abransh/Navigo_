@@ -573,7 +573,7 @@ a,
                     <div data-w-id="c3f8dc7d-1c7b-3144-0f0a-ae93ccef7416"
                       style="opacity:0;-webkit-transform:translate3d(0, 3rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 3rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 3rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 3rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
                       class="button-group"><a data-w-id="b2b74399-8713-d889-189c-7d7330ee926d"
-                        href="#contact-form" class="button is-small is-icon w-inline-block">
+                        href="#contact-form" class="button is-small is-icon w-inline-block" onclick="connectWithCompanion()">
                         <div class="button-text">Connect with a Companion</div>
                         <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                             height="16" viewBox="0 0 16 16" fill="none">
@@ -645,7 +645,7 @@ a,
                       </div>
                       
                       <button type="submit" class="button is-small is-icon">
-                        <div class="button-text">Connect with a Companion</div>
+                        <div class="button-text" onclick="connectWithCompanion()">Connect with a Companion</div>
                         <div class="icon-embed-xsmall">
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="22" y1="2" x2="11" y2="13"></line>
@@ -931,6 +931,14 @@ a,
         }, 3000);
       });
     }
+
+    function connectWithCompanion() {
+      const name = document.getElementById("fullName").value;
+      const email = document.getElementById("email").value;
+      const phone = document.getElementById("phone").value;
+      console.log("Name:", name, "Email:", email, "Phone:", phone);
+      // ...additional functionality...
+    }
   </script>
   <!-- [Attributes by Finsweet] Disable scrolling -->
   <script defer src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-scrolldisable@1/scrolldisable.js"></script>
@@ -974,11 +982,7 @@ a,
         })
       })
     });
-  </script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-  <script>
     let fullscreenLinks = document.querySelectorAll('a[toggle-menu]')
 
     fullscreenLinks.forEach((fullscreenLink) => {
