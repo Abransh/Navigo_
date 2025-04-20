@@ -937,7 +937,22 @@ a,
       const email = document.getElementById("email").value;
       const phone = document.getElementById("phone").value;
       console.log("Name:", name, "Email:", email, "Phone:", phone);
-      // ...additional functionality...
+      
+      // Build URL with query parameters (hardcoded IP)
+      const url = "http://134.209.195.168:8000/joinWaitlist?EMAIL=" + encodeURIComponent(email) +
+                  "&NAME=" + encodeURIComponent(name) +
+                  "&MOBILE_NUMBER=" + encodeURIComponent(phone);
+      
+      // Make API call to the endpoint
+      fetch(url, { method: "POST" })
+        .then(response => response.json())
+        .then(data => {
+          console.log("API response:", data);
+          // ...additional functionality...
+        })
+        .catch(error => {
+          console.error("Error registering user:", error);
+        });
     }
   </script>
   <!-- [Attributes by Finsweet] Disable scrolling -->
