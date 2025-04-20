@@ -10,7 +10,14 @@
     name="description" />
     <meta name="keywords" content="India travel, local guide, travel companion, authentic travel, India tourism, Delhi guide, avoid scams, cultural immersion, language barrier" />
 
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <!-- Updated mobile optimization meta tags -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#FF8255">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link href="images/icons/favicon.ico" rel="icon" type="image/ico" />
   <link href="https://cdn.prod.website-files.com/6670bf25956a84a23b306e42/css/gliss-wellness.webflow.a2a750cae.css"
     rel="stylesheet" type="text/css" />
@@ -38,6 +45,27 @@
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       -o-font-smoothing: antialiased;
+    }
+
+    /* Prevent zooming on mobile */
+    * { 
+      touch-action: pan-x pan-y;
+      -webkit-touch-callout: none;
+      -webkit-text-size-adjust: none;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+
+    body {
+      touch-action: pan-x pan-y;
+      -webkit-text-size-adjust: 100%;
+      -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+
+    /* Prevent double-tap zooming on mobile */
+    input, textarea, button, select, div, a {
+      touch-action: manipulation;
     }
   </style>
   <meta name="google-site-verification" content="IzZ-J01qwLtjboG3lWTcXAHWm97brc7ULpfDIY3y36s" />
@@ -642,6 +670,44 @@
                     fill="#FF8255" />
                 </svg></div>
             </div>
+            <div class="marquee-button_marquee">
+              <div class="marquee-button_heading-wrapper">
+                <div class="heading-style-h1 marquee">Get Started</div>
+              </div>
+              <div class="arrow-large w-embed"><svg width="69" height="43" viewBox="0 0 69 43" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M56.7527 17.963C52.8271 14.5983 48.3046 9.33365 46.0413 1.78875L48.9148 0.926758C50.9674 7.76922 55.0772 12.5757 58.705 15.6853C60.5172 17.2385 62.1984 18.3589 63.4204 19.0878C64.0309 19.4519 64.5249 19.7173 64.8611 19.8892C65.0291 19.9752 65.1575 20.0378 65.2411 20.0776C65.2829 20.0975 65.3135 20.1117 65.3322 20.1203L65.3512 20.129L65.3519 20.1293L65.3528 20.1297L65.3535 20.13L65.3539 20.1302L68.4361 21.5L65.3539 22.8699L65.3535 22.87L65.3528 22.8703L65.3519 22.8707L65.3512 22.8711L65.3322 22.8797C65.3135 22.8883 65.2829 22.9025 65.2411 22.9224C65.1575 22.9622 65.0291 23.0248 64.8611 23.1108C64.5249 23.2828 64.0309 23.5481 63.4204 23.9122C62.1984 24.6412 60.5172 25.7615 58.705 27.3148C55.0772 30.4243 50.9674 35.2308 48.9148 42.0733L46.0413 41.2113C48.3046 33.6664 52.8271 28.4017 56.7527 25.037C57.6587 24.2604 58.5352 23.583 59.3482 23H0V20H59.3482C58.5352 19.417 57.6587 18.7396 56.7527 17.963Z"
+                    fill="#FF8255" />
+                </svg></div>
+              <div class="marquee-button_heading-wrapper">
+                <div class="heading-style-h1 marquee">Get Started</div>
+              </div>
+              <div class="arrow-large w-embed"><svg width="69" height="43" viewBox="0 0 69 43" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M56.7527 17.963C52.8271 14.5983 48.3046 9.33365 46.0413 1.78875L48.9148 0.926758C50.9674 7.76922 55.0772 12.5757 58.705 15.6853C60.5172 17.2385 62.1984 18.3589 63.4204 19.0878C64.0309 19.4519 64.5249 19.7173 64.8611 19.8892C65.0291 19.9752 65.1575 20.0378 65.2411 20.0776C65.2829 20.0975 65.3135 20.1117 65.3322 20.1203L65.3512 20.129L65.3519 20.1293L65.3528 20.1297L65.3535 20.13L65.3539 20.1302L68.4361 21.5L65.3539 22.8699L65.3535 22.87L65.3528 22.8703L65.3519 22.8707L65.3512 22.8711L65.3322 22.8797C65.3135 22.8883 65.2829 22.9025 65.2411 22.9224C65.1575 22.9622 65.0291 23.0248 64.8611 23.1108C64.5249 23.2828 64.0309 23.5481 63.4204 23.9122C62.1984 24.6412 60.5172 25.7615 58.705 27.3148C55.0772 30.4243 50.9674 35.2308 48.9148 42.0733L46.0413 41.2113C48.3046 33.6664 52.8271 28.4017 56.7527 25.037C57.6587 24.2604 58.5352 23.583 59.3482 23H0V20H59.3482C58.5352 19.417 57.6587 18.7396 56.7527 17.963Z"
+                    fill="#FF8255" />
+                </svg></div>
+              <div class="marquee-button_heading-wrapper">
+                <div class="heading-style-h1 marquee">Get Started</div>
+              </div>
+              <div id="w-node-_8e17537b-61c9-a5b4-c632-0a234f42b6d3-4f42b6b3" class="arrow-large w-embed"><svg
+                  width="69" height="43" viewBox="0 0 69 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M56.7527 17.963C52.8271 14.5983 48.3046 9.33365 46.0413 1.78875L48.9148 0.926758C50.9674 7.76922 55.0772 12.5757 58.705 15.6853C60.5172 17.2385 62.1984 18.3589 63.4204 19.0878C64.0309 19.4519 64.5249 19.7173 64.8611 19.8892C65.0291 19.9752 65.1575 20.0378 65.2411 20.0776C65.2829 20.0975 65.3135 20.1117 65.3322 20.1203L65.3512 20.129L65.3519 20.1293L65.3528 20.1297L65.3535 20.13L65.3539 20.1302L68.4361 21.5L65.3539 22.8699L65.3535 22.87L65.3528 22.8703L65.3519 22.8707L65.3512 22.8711L65.3322 22.8797C65.3135 22.8883 65.2829 22.9025 65.2411 22.9224C65.1575 22.9622 65.0291 23.0248 64.8611 23.1108C64.5249 23.2828 64.0309 23.5481 63.4204 23.9122C62.1984 24.6412 60.5172 25.7615 58.705 27.3148C55.0772 30.4243 50.9674 35.2308 48.9148 42.0733L46.0413 41.2113C48.3046 33.6664 52.8271 28.4017 56.7527 25.037C57.6587 24.2604 58.5352 23.583 59.3482 23H0V20H59.3482C58.5352 19.417 57.6587 18.7396 56.7527 17.963Z"
+                    fill="#FF8255" />
+                </svg></div>
+              <div class="marquee-button_heading-wrapper">
+                <div class="heading-style-h1 marquee">Get Started</div>
+              </div>
+              <div class="arrow-large w-embed"><svg width="69" height="43" viewBox="0 0 69 43" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M56.7527 17.963C52.8271 14.5983 48.3046 9.33365 46.0413 1.78875L48.9148 0.926758C50.9674 7.76922 55.0772 12.5757 58.705 15.6853C60.5172 17.2385 62.1984 18.3589 63.4204 19.0878C64.0309 19.4519 64.5249 19.7173 64.8611 19.8892C65.0291 19.9752 65.1575 20.0378 65.2411 20.0776C65.2829 20.0975 65.3135 20.1117 65.3322 20.1203L65.3512 20.129L65.3519 20.1293L65.3528 20.1297L65.3535 20.13L65.3539 20.1302L68.4361 21.5L65.3539 22.8699L65.3535 22.87L65.3528 22.8703L65.3519 22.8707L65.3512 22.8711L65.3322 22.8797C65.3135 22.8883 65.2829 22.9025 65.2411 22.9224C65.1575 22.9622 65.0291 23.0248 64.8611 23.1108C64.5249 23.2828 64.0309 23.5481 63.4204 23.9122C62.1984 24.6412 60.5172 25.7615 58.705 27.3148C55.0772 30.4243 50.9674 35.2308 48.9148 42.0733L46.0413 41.2113C48.3046 33.6664 52.8271 28.4017 56.7527 25.037C57.6587 24.2604 58.5352 23.583 59.3482 23H0V20H59.3482C58.5352 19.417 57.6587 18.7396 56.7527 17.963Z"
+                    fill="#FF8255" />
+                </svg></div>
+            </div>
           </div>
         </div>
       </a>
@@ -684,9 +750,9 @@
                         <div class="margin-bottom">
                           <div class="eyebrow-text lime-outline">How</div>
                         </div>
-                        <h3 class="heading-style-h4 text-color-petal">Travel with confidence knowing you're accompanied by a verified local companion. We prioritize safety with thorough background checks, 
+                        <h4 class="heading-style-h4 text-color-petal">Travel with confidence knowing you're accompanied by a verified local companion. We prioritize safety with thorough background checks, 
                           real-time location sharing, and specialized support for solo female travelers.
-                        </h3>
+                        </h4>
                       </div>
                     </div>
                   </div>
@@ -1219,9 +1285,10 @@
                           height="16" viewBox="0 0 16 16" fill="none">
                           <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M11.558 7.1487H0V8.8513H11.558C11.4606 8.93993 11.3619 9.03241 11.2623 9.12877C9.95239 10.3955 8.4607 12.355 7.79714 15.0937L9.42724 15.5C9.99358 13.1626 11.2699 11.4738 12.4206 10.3611C12.9951 9.80552 13.5328 9.39906 13.9235 9.13346C14.1185 9.00088 14.2759 8.90404 14.3817 8.84185C14.4346 8.81077 14.4744 8.7884 14.4995 8.7746C14.5121 8.7677 14.5209 8.76295 14.5259 8.76032L14.5292 8.75855L14.5296 8.75832L14.5301 8.75807L14.5302 8.75801L14.5303 8.75799L16 8L14.5303 7.24201L14.5302 7.24198L14.5301 7.24192L14.5296 7.24167L14.5292 7.24144L14.5259 7.23967C14.5209 7.23705 14.5121 7.2323 14.4995 7.2254C14.4744 7.2116 14.4346 7.18923 14.3817 7.15815C14.2759 7.09596 14.1185 6.99912 13.9235 6.86654C13.5328 6.60094 12.9951 6.19448 12.4206 5.63895C11.2699 4.52623 9.99358 2.83739 9.42724 0.5L7.79714 0.90634C8.4607 3.64497 9.95239 5.60454 11.2623 6.87123C11.3619 6.96759 11.4606 7.06007 11.558 7.1487Z"
-                            fill="#FF8255" />
-                        </svg></div>
-                    </a></div>
+                              fill="#FF8255" />
+                          </svg></div>
+                      </a></div>
+                  </div>
                 </div>
               </div>
             </div>
