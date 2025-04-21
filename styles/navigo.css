@@ -7111,6 +7111,11 @@ figcaption {
     padding-bottom: 4rem;
   }
 
+  .padding-section-xlarge {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
   .spacer-xsmall {
     padding-top: .75rem;
   }
