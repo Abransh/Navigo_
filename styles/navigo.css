@@ -7095,7 +7095,7 @@ figcaption {
   }
 
   .heading-style-h4 {
-    font-size: 1.22rem;
+    font-size: 1.2rem;
     line-height: 1.4;
   }
 
@@ -7286,8 +7286,12 @@ figcaption {
   }
 
   .faq_component {
-    grid-row-gap: 3rem;
-    grid-template-columns: 1fr;
+    grid-template: none;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    padding: 0 1rem;
   }
 
   .faq_question {
