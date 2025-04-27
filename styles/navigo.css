@@ -7294,6 +7294,25 @@ figcaption {
     padding: 0 1rem;
   }
 
+  .faq_content {
+    width: 100%;
+    margin-bottom: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .faq_list {
+    width: 100%;
+  }
+  
+  .faq_list-grid {
+    width: 100%;
+  }
+  
+  .faq_accordion {
+    width: 100%;
+  }
+
   .faq_question {
     padding: 1rem 1.25rem;
   }
