@@ -6880,6 +6880,20 @@ figcaption {
   .arrow-bg {
     top: auto;
   }
+
+  .contact-form-wrapper {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contact-form-header-title {
+    font-size: 1.25rem;
+  }
+  
+  .benefit-item {
+    margin-bottom: 1.25rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -7086,6 +7100,9 @@ figcaption {
   }
 
   .button.is-small.is-icon, .button.is-small.is-icon.login-button {
+    min-height: 44px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: none;
   }
 
@@ -7457,6 +7474,54 @@ figcaption {
 
   .faq_question-copy, .faq_question-copy-copy, .faq_question-copy-copy-copy {
     padding: 1rem 1.25rem;
+  }
+
+  #contact-form {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+  }
+  
+  .contact-form-wrapper {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-form-header {
+    padding: 1.25rem 1rem;
+  }
+  
+  .contact-form-header-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .contact-form-header-title {
+    font-size: 1.1rem;
+  }
+  
+  .contact-form-body {
+    padding: 1.5rem;
+  }
+
+  .form-input {
+    min-height: 44px; /* Minimum Apple recommended touch target */
+  }
+
+  .form-label {
+    margin-bottom: 6px;
+  }
+
+  .form-footer {
+    gap: 16px;
+  }
+
+  .success-message {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .success-title {
+    font-size: 1.3rem;
   }
 }
 

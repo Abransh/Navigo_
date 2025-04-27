@@ -139,10 +139,27 @@
     }
     
     .form-input:focus {
-      outline: none;
-      border-color: #FF8255;
-      box-shadow: 0 0 0 2px rgba(255, 130, 85, 0.2);
-    }
+  outline: none;
+  border-color: #FF8255;
+  box-shadow: 0 0 0 2px rgba(255, 130, 85, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Error State */
+.input-error {
+  border-color: #e74c3c !important;
+  background-color: rgba(231, 76, 60, 0.05);
+}
+
+
+.input-error:focus {
+  box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.2);
+}
+
+/* Helper class for when a form group contains a focused input */
+.input-focused label {
+  color: #FF8255;
+}
     
     .form-textarea {
       min-height: 120px;
